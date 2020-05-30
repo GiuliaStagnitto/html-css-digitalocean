@@ -1,0 +1,17 @@
+[class*="col-"]{
+  border: 1px solid black;
+  height: 100px;
+}
+
+#jumbo{
+  background-color: blue;
+}
+#carosel{
+  background-color: grey;
+}
+#tabelle{
+  background-color: blue;
+}
+#start{
+  background-color: blue;
+}
