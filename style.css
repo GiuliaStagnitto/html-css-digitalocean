@@ -1,6 +1,5 @@
-[class*="col-"]{
-  border: 1px solid black;
-
+*{
+  font-family: 'Lemonada', cursive;
 }
 
 .row{
@@ -8,19 +7,28 @@
 }
 
 #carosel{
-  background-color: grey;
+  background-color: rgbA(242, 242, 242, 0.50);
 }
 #tabelle{
-  background-color: blue;
+  background-color: #003d99;
 }
 #start{
-  background-color: blue;
+  background-color: #003d99;
 }
 #loghi{
   background-color: #f2f2f2;
 }
 
 /* sezione navbar */
+#navbar .container{
+  margin: 0;
+  width:100%;
+}
+#navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
 .navbar-default{
   height: 5em;
 }
@@ -28,25 +36,25 @@
   height: 2em;
 }
 li.bottone{
-  border: 1px solid blue;
+  border: 1px solid #003d99;
   border-radius: 5%;
-  color: blue;
+  color: #003d99;
+  box-sizing: border-box;
 }
 .navbar-default
 .navbar-nav>li.bottone>a{
-  color: blue;
+  color: #003d99;
 }
 .navbar-default
 .navbar-nav>li>a{
   font-size: 1em;
-  font-family: 'Franklin Gothic';
+  /* font-family: 'Franklin Gothic'; */
 }
 ul.navbar-nav{
   margin-top: 10px;
 }
 .navbar{
   margin-bottom: 0;
-
 }
 
 /* sezione jumbo */
@@ -54,8 +62,7 @@ ul.navbar-nav{
 #jumbo{
   color: white;
   background: url('digitalocean-assets/img/bg-home-cta.svg');
-  font-family: 'Varela Round', sans-serif;
-
+  padding-top: 100px;
 }
 #jumbo p{
   font-size: 1.15em;
@@ -70,16 +77,22 @@ ul.navbar-nav{
 }
 
 
+
 /* sezione loghi */
 
 #loghi{
   text-align: center;
   padding: 40px 0;
   font-weight: bold;
-  font-family: 'Varela Round', sans-serif;
+
+
 }
 #loghi .row{
-  padding: 20px 0;
+  padding: 20px 0px;
+
+}
+#loghi img{
+  padding-right: 40px;
 }
 
 /* sezione deploy */
@@ -87,12 +100,100 @@ ul.navbar-nav{
 #deploy h3{
   text-align: center;
   font-weight: bold;
+
+}
+#deploy h4{
+  color: #003d99;
+  font-weight: bold;
+}
+
+#deploy span>a{
+  padding: 10px;
+  border-left: 2px solid grey;
+  font-size: 1.5em;
+  color: grey;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+#deploy div>img{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#deploy .menu{
+  margin-top: 30px;
+
+}
+
+/* SEZIONE CAROSEL */
+#carosel {
+  color: black;
+  text-align: center;
+  padding: 50px;
+}
+#carosel h5{
+  color: white;
+}
+#carosel h3{
+ padding-bottom: 20px;
+}
+#carosel p{
+ padding-bottom: 20px;
 }
 
 /* sezione features */
+#features{
+  padding: 50px;
+}
 
 #features h3{
   font-family: 'Varela Round', sans-serif;
   text-align: center;
   font-weight: bold;
+}
+#features h3{
+  text-align: center;
+  font-weight: bold;
+
+}
+#features h4{
+  color: #003d99;
+  font-weight: bold;
+}
+#features div>img{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* sezione tabelle */
+#tabelle{
+  color: white;
+  text-align: center;
+}
+#tabelle h3{
+  font-size: 2em;
+}
+
+
+/* sezione start */
+
+#start{
+  text-align: center;
+  /* padding: 50px; */
+}
+
+#start h3{
+  padding-top: 50px;
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+#start button{
+  margin: 50px 0;
+  border-radius: 10px;
+  color: #003d99;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: white;
+  padding: 10px;
 }
